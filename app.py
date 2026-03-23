@@ -15,7 +15,7 @@ def home():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
         if request.method == 'GET':
-        return render_template("index.html")
+            return render_template("index.html")
 
     step = float(request.form['step'])
     amount = float(request.form['amount'])
